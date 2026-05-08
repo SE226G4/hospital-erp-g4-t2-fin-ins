@@ -17,7 +17,7 @@ This module handles billing and insurance processes for patients. It combines al
 | MOHAMMED NOUR ALI | Requirements & Analysis | Functional Requirements, Use Case Diagrams,User Stories | https://github.com/mohammedsywt |
 | MOHAMMED ALASSAD | Process Modeling | Activity Diagrams, Business Rules Validation, Frontend |https://github.com/alwkayanalassaadmohamad2-boop |
 | MOHAMMED KHATTAB | Data Design | ERD, Database Schema, API Specs, Class Diagrams |https://github.com/mohammaadkh|
-| HASSAN OMAR | Interaction Design | Sequence Diagrams, Logic Flow, Wireframes,Interface Logic|Github.com/Hasan-Alomar-10 |
+| HASSAN OMAR | Interaction Design | Sequence Diagrams, Logic Flow, Wireframes,Interface Logic|https://github.com/Hasan-Alomar-10 |
 
 ---
 
