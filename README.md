@@ -1,12 +1,11 @@
-﻿# Module Name: [e.g., Surgery Optimization System]
+﻿# Module Name: [Finance & Insurance]
 ## Project: [Hospital ERP / MediChain]
-**Module Code:** [e.g., SURG-05]
+**Module Code:** [FIN-INS]
 
 ---
 
 ## 📝 Module Overview
-Provide a brief description of what this module does based on the project text. (e.g., This module manages operating room schedules and prevents booking conflicts).
-
+This module handles billing and insurance processes for patients. It combines all service costs into one invoice and calculates insurance coverage automatically.
 ---
 
 ## 👥 Team Members & Responsibilities
@@ -14,12 +13,11 @@ Provide a brief description of what this module does based on the project text. 
 
 | Member Name | Primary Responsibility | Assigned Tasks (Examples) | GitHub Profile |
 | :--- | :--- | :--- | :--- |
-| **Student 1 (Leader)** | Integration & Architecture | Component Diagrams, API Specs, Team Coordination | [Link] |
-| **Student 2** | Requirements & Analysis | Functional Requirements, Use Case Diagrams | [Link] |
-| **Student 3** | Process Modeling | Activity Diagrams, Business Rules Validation | [Link] |
-| **Student 4** | Data Design | ERD, Database Schema, Class Diagrams | [Link] |
-| **Student 5 (Optional)** | Interaction Design | Sequence Diagrams, Logic Flow | [Link] |
-| **Student 6 (Optional)** | UI/UX & Frontend | Wireframes, Interface Logic, User Stories | [Link] |
+| DAHHAM ALHAIS (Leader)| Integration & Architecture | Component Diagrams,  UI/UX, Team Coordination | [Link] |
+| MOHAMMED NOUR ALI | Requirements & Analysis | Functional Requirements, Use Case Diagrams,User Stories | [Link] |
+| MOHAMMED ALASSAD | Process Modeling | Activity Diagrams, Business Rules Validation, Frontend | [Link] |
+| MOHAMMED KHATTAB | Data Design | ERD, Database Schema, API Specs, Class Diagrams | [Link] |
+| HASSAN OMAR | Interaction Design | Sequence Diagrams, Logic Flow, Wireframes,Interface Logic| [Link] |
 
 ---
 
@@ -34,8 +32,8 @@ Provide a brief description of what this module does based on the project text. 
 
 ## 🔗 Integration Points
 *How this module communicates with others:*
-* **Inbound:** Data received from [Module Name].
-* **Outbound:** Data sent to [Module Name].
+* **Inbound:** Data received from [ADM-MC].
+* **Outbound:** Data sent to [IPD-BED].
 
 ---
 ## 🛠 Tools Used
