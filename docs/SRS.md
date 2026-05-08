@@ -1,100 +1,111 @@
-﻿# Software Requirements Specification (SRS)
-## Project: [Insert the Parent System Name, e.g., Hospital ERP System]
-## Module/Subsystem: [Insert Your Module Name, e.g., Laboratory Management, Clinical System, OR "Master Integration System" if you are the integration team]
+  # Software Requirements Specification (SRS)
+
+## Project: Hospital ERP System
+## Module/Subsystem: Finance & Insurance (FIN-INS)
 **Version:** 1.0  
-**Date:** [YYYY-MM-DD]
+**Date:** 2026-05-08
 
 ---
 
 ## 1. Introduction
 ### 1.1 Purpose
-* **Instruction:** Describe the specific purpose of this document. Who is the intended audience? If you are a subsystem team, explain how this document defines your specific module. If you are the Integration Team (Team Leaders), explain how this document governs the entire system.
+The purpose of this document is to define the functional and non-functional requirements for the Finance & Insurance (FIN-INS) module. This document serves as a guide for developers, testers, and the integration team to ensure accurate financial operations within the Hospital ERP System.
 
 ### 1.2 Scope
-* **Instruction:** Define the boundaries of your system. 
-  * What are the core goals and benefits?
-  * **Crucial:** Explicitly list what your system *will* do and what it *will NOT* do to prevent overlap with other teams.
+The FIN-INS module handles the financial lifecycle of patients.
+* **What it will do:** Aggregate service costs (stay, surgery, pharmacy), calculate insurance coverage percentages, verify payments before service delivery, and issue final invoices.
+* **What it will NOT do:** It will not handle clinical diagnosis, inventory restocking, or payroll management for hospital staff.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
-* **Instruction:** Provide a table defining all technical terms, acronyms, or domain-specific language (e.g., medical terms, API, ERP) used in this document so all teams share a common understanding.
+| Term | Definition |
+| :--- | :--- |
+| ERP | Enterprise Resource Planning |
+| FIN-INS | Finance and Insurance Module |
+| SRS | Software Requirements Specification |
+| JWT | JSON Web Token (for security) |
 
 ### 1.4 References
-* **Instruction:** List all referenced documents. This must include:
-  * IEEE 830 Standard.
-  * Links to shared architectural documents or API contracts agreed upon with the Integration Team.
+* IEEE 830-1998 Standard for Software Requirements Specifications.
+* Hospital ERP Master Architectural Document.
+* GitHub Project Board for FIN-INS Module.
 
 ### 1.5 Overview
-* **Instruction:** Briefly explain how the rest of this SRS document is organized.
+This document is organized into sections covering the product perspective, detailed user stories following the Agile approach, performance requirements, and system attributes like security and reliability.
 
 ---
 
 ## 2. Overall Description
 ### 2.1 Product Perspective
-* **Instruction:** Explain how your software fits into the bigger picture. 
-  * **For Subsystem Teams:** State clearly that your module is a component of a larger system. How does it interact with the master database or other modules?
-  * **For the Integration Team:** Provide the high-level block diagram showing all subsystems and their connection points.
+The FIN-INS module is a component of the larger Hospital ERP System. It acts as a central financial hub that consumes data from clinical and logistical modules to process billing.
 
-*   **2.1.1 System Interfaces:** [List the exact integration points and APIs your module exposes to, or consumes from, other teams].
-*   **2.1.2 User Interfaces:** [Describe the logical characteristics of your UI. Are you following a shared design system?].
-*   **2.1.3 Hardware Interfaces:** [List any required hardware, e.g., barcode scanners for labs, or state "None"].
-*   **2.1.4 Software Interfaces:** [Specify OS requirements, database dependencies, or third-party libraries].
-*   **2.1.5 Communications Interfaces:** [Define networking protocols used, e.g., HTTP/REST, WebSockets].
-*   **2.1.6 Memory & Operational Constraints:** [State minimum RAM, storage, and normal operating assumptions].
+* **2.1.1 System Interfaces:** RESTful APIs to communicate with Pharmacy and Ward modules.
+* **2.1.2 User Interfaces:** Web-based interface following the shared React design system.
+* **2.1.3 Hardware Interfaces:** Standard desktop computers and thermal receipt printers.
+* **2.1.4 Software Interfaces:** Runs on Windows/Linux, utilizes SQL Server database.
+* **2.1.5 Communications Interfaces:** HTTP/HTTPS protocols for all API calls.
 
 ### 2.2 Product Functions
-* **Instruction:** Provide a high-level, bulleted summary of the major functions your software performs. Do not go into deep detail here (save it for Section 3).
+* Consolidated billing for all hospital services.
+* Automated insurance coverage verification.
+* Real-time payment status tracking.
+* Final discharge invoice generation.
 
 ### 2.3 User Characteristics
-* **Instruction:** Who will use your specific module? (e.g., Lab Technicians, Doctors, System Admins). Describe their technical expertise level.
+* **Accountants:** High technical and financial expertise.
+* **Billing Clerks:** Moderate technical expertise, responsible for daily transactions.
 
 ### 2.4 Constraints, Assumptions, and Dependencies
-* **Instruction:** List any factors that limit your development (e.g., medical data privacy laws, reliance on another team finishing their API first, specific coding languages mandated).
+* **Dependency:** Accurate cost data must be provided by the Pharmacy and Operations modules.
+* **Constraint:** Compliance with local financial laws and patient data privacy.
 
 ---
 
 ## 3. Specific Requirements (Agile Approach)
-* **Instruction:** This section translates traditional functional requirements into Agile User Stories. Every feature must be traceable to the project management board.
 
 ### 3.1 External Interface Requirements
-* **Instruction:** Detail the exact data formats, API endpoints, and UI layouts needed for the interfaces mentioned in section 2.1.
+* **API Endpoint:** `POST /api/fin-ins/invoice/calculate`
+* **Format:** JSON response including total cost, insurance deduction, and net amount.
 
 ### 3.2 System Features & User Stories
-* **Instruction:** Organize your requirements by Feature. For each feature, write the underlying requirements as User Stories and link them to your GitHub Issues.
 
-#### 3.2.1 Feature: [Insert Feature Name, e.g., Patient Registration]
-*   **Description:** [Briefly describe the feature].
-*   **Priority:** [High / Medium / Low].
-*   **User Stories:**
-    *   **Story 1:** As a [User Role], I want to [Action/Goal] so that [Benefit/Value]. 
-        * *Acceptance Criteria:* [List what must be true for this to be considered 'Done'].
-        * *GitHub Issue:* [Link to Issue, e.g., #12]
-    *   **Story 2:** As a [User Role], I want to [Action/Goal] so that [Benefit/Value].
-        * *Acceptance Criteria:* [List criteria].
-        * *GitHub Issue:* [Link to Issue, e.g., #13]
+#### 3.2.1 Feature: Billing Aggregation
+* **Description:** Gathering costs from all hospital departments.
+* **Priority:** High.
+* **User Stories:**
+    * **Story 1:** As a system, I want to aggregate costs from all departments (Stay, Operations, Pharmacy) into a single patient invoice.
+        * *Acceptance Criteria:* Invoice includes timestamped items from all modules.
+        * *GitHub Issue:* #1
 
-#### 3.2.2 Feature: [Insert Feature Name]
-*   [Repeat the structure above for all module features].
+#### 3.2.2 Feature: Insurance Processing
+* **Description:** Managing insurance coverage and remaining balances.
+* **Priority:** High.
+* **User Stories:**
+    * **Story 1:** As a billing officer, I want to calculate insurance coverage automatically to show the remaining balance.
+        * *Acceptance Criteria:* Correct percentage is deducted based on the patient's insurance plan.
+        * *GitHub Issue:* #2
+    * **Story 2:** As a system, I want to verify payment or insurance coverage before allowing any service to be provided.
+        * *Acceptance Criteria:* System blocks service entry if no financial coverage is verified.
+        * *GitHub Issue:* #3
 
-### 3.3 Performance Requirements
-* **Instruction:** Specify quantitative limits. (e.g., "The module must return query results in under 2 seconds for up to 50 concurrent users").
+---
 
-### 3.4 Logical Database Requirements
-* **Instruction:** Describe the data entities managed by your module. If you are using a shared database, specify which tables your team is responsible for. (Include ERD models in the Appendix).
+## 3.3 Performance Requirements
+* The system shall process invoice calculations in less than 2 seconds.
+* The system shall support up to 50 concurrent billing requests.
 
-### 3.5 Software System Attributes
-* **Instruction:** Define the Non-Functional Requirements (NFRs) for your module:
-  * **Reliability:** [Acceptable failure rates].
-  * **Security:** [Authentication methods, data encryption protocols].
-  * **Maintainability & Portability:** [Coding standards, documentation rules].
+## 3.4 Logical Database Requirements
+* **Entities:** `PatientAccount`, `InvoiceItem`, `InsuranceProvider`, `PaymentTransaction`.
+
+## 3.5 Software System Attributes
+* **Security:** Multi-factor authentication for accountants and 256-bit encryption for financial data.
+* **Reliability:** 99.5% system availability during hospital working hours.
 
 ---
 
 ## 4. Appendices
 ### Appendix A: Glossary & Models
-* **Instruction:** Include any Data Flow Diagrams (DFDs), Entity-Relationship Diagrams (ERDs), or detailed UI Mockups here.
+* Entity-Relationship Diagrams (ERD) will be added in the next iteration.
 
 ### Appendix B: GitHub Traceability Checklist
-* **Instruction for Team Members:** Before submitting this SRS, ensure that:
-  * [ ] Every User Story in Section 3.2 has a corresponding GitHub Issue.
-  * [ ] Every GitHub Issue has an appropriate label (e.g., `enhancement`, `requirement`).
-  * [ ] Pull Requests reference the Issue IDs (e.g., `Closes #12`). 
+* [x] Every User Story in Section 3.2 has a corresponding GitHub Issue.
+* [x] Every GitHub Issue has an appropriate label.
