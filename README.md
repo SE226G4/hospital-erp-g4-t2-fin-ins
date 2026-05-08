@@ -32,8 +32,8 @@ This module handles billing and insurance processes for patients. It combines al
 
 ## 🔗 Integration Points
 *How this module communicates with others:*
-* **Inbound:** Data received from [ADM-MC].
-* **Outbound:** Data sent to [IPD-BED].
+* **Inbound:** Data received from [ADM-MC,IPD-BED,PHM-LOG,SURG-OPT].
+* **Outbound:** Data sent to [IPD-BED,SURG-OPT].
 
 ---
 ## 🛠 Tools Used
