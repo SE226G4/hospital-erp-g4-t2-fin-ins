@@ -15,7 +15,7 @@ This module handles billing and insurance processes for patients. It combines al
 | :--- | :--- | :--- | :--- |
 | DAHHAM ALHAIS (Leader)| Integration & Architecture | Component Diagrams, Activity Diagrams ,Sequence Diagrams, Team Coordination | https://github.com/Dahhamm|
 | MOHAMMED NOUR ALI | Requirements & Analysis | Functional Requirements, Use Case Diagrams,User Stories, Logic Flow | https://github.com/mohammedsywt |
-| MOHAMMED ALASSAD | Process Modeling | Business Rules Validation,  UI/UX و Frontend ,Interface Logic |https://github.com/alwkayanalassaadmohamad2-boop |
+| MOHAMMED ALASSAD | Process Modeling | Business Rules Validation,  UI/UX , Frontend ,Interface Logic |https://github.com/alwkayanalassaadmohamad2-boop |
 | MOHAMMED KHATTAB | Data Design | ERD, Database Schema, API Specs, Class Diagrams ,Wireframes|https://github.com/mohammaadkh|
 
 ---
