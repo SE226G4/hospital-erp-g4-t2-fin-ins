@@ -13,11 +13,10 @@ This module handles billing and insurance processes for patients. It combines al
 
 | Member Name | Primary Responsibility | Assigned Tasks (Examples) | GitHub Profile |
 | :--- | :--- | :--- | :--- |
-| DAHHAM ALHAIS (Leader)| Integration & Architecture | Component Diagrams,  UI/UX, Team Coordination | https://github.com/Dahhamm|
-| MOHAMMED NOUR ALI | Requirements & Analysis | Functional Requirements, Use Case Diagrams,User Stories | https://github.com/mohammedsywt |
-| MOHAMMED ALASSAD | Process Modeling | Activity Diagrams, Business Rules Validation, Frontend |https://github.com/alwkayanalassaadmohamad2-boop |
-| MOHAMMED KHATTAB | Data Design | ERD, Database Schema, API Specs, Class Diagrams |https://github.com/mohammaadkh|
-| HASSAN OMAR | Interaction Design | Sequence Diagrams, Logic Flow, Wireframes,Interface Logic|https://github.com/Hasan-Alomar-10 |
+| DAHHAM ALHAIS (Leader)| Integration & Architecture | Component Diagrams,  UI/UX, Team Coordination ,Sequence Diagrams| https://github.com/Dahhamm|
+| MOHAMMED NOUR ALI | Requirements & Analysis | Functional Requirements, Use Case Diagrams,User Storiesو Logic Flow | https://github.com/mohammedsywt |
+| MOHAMMED ALASSAD | Process Modeling | Activity Diagrams, Business Rules Validation, Frontend ,Interface Logic |https://github.com/alwkayanalassaadmohamad2-boop |
+| MOHAMMED KHATTAB | Data Design | ERD, Database Schema, API Specs, Class Diagrams ,Wireframes|https://github.com/mohammaadkh|
 
 ---
 
