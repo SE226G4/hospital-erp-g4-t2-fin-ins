@@ -125,7 +125,7 @@ The FIN-INS module is a component of the larger Hospital ERP System. It acts as 
 * Entity-Relationship Diagrams :
 * 1-Activity Diagram : ![](https://github.com/Dahhamm/software-engineering2/blob/main/Activity%20_diagram_SE2.svg)
 * [Link of Activity Diagram:](https://github.com/Dahhamm/software-engineering2/blob/main/Activity%20_diagram_SE2.drawio)
-* 2- Use Case Diagram:
+* 2-Link of 
 
 ### Appendix B: GitHub Traceability Checklist
 * [x] Every User Story in Section 3.2 has a corresponding GitHub Issue.
