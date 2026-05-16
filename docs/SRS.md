@@ -60,7 +60,25 @@ The FIN-INS module is a component of the larger Hospital ERP System. It acts as 
 
 ---
 
-## 3. Specific Requirements (Agile Approach)
+## 3. Specific Requirements (Agile Approach) :
+
+### 3.0.1 Functional Requirements (FRs)
+
+1. The system shall generate unified invoices.
+2. The system shall calculate insurance coverage automatically.
+3. The system shall validate payment before service approval.
+4. The system shall receive billing data from all operational modules.
+5. The system shall generate final patient invoices.
+
+---
+
+### 3.0.2 Non-Functional Requirements (NFRs)
+
+1. The system shall ensure secure financial transactions.
+2. The system shall support high availability.
+3. The system shall process invoices in less than 2 seconds.
+4. The system shall maintain data consistency between modules.
+5. The system shall support scalable integration.
 
 ### 3.1 External Interface Requirements
 * **API Endpoint:** `POST /api/fin-ins/invoice/calculate`
