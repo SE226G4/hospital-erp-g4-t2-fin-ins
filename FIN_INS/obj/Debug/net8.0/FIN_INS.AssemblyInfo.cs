@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FIN_INS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15dd62d93eeb8a64b75fc312cf011d9bdb6ada6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6741b699741719aa920385bfb6f66c457b783702")]
 [assembly: System.Reflection.AssemblyProductAttribute("FIN_INS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FIN_INS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
