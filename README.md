@@ -23,7 +23,7 @@ This module handles billing and insurance processes for patients. It combines al
 ## 🚀 Analysis & Design Progress
 - [x] **Requirement Elicitation:** Completed list of FRs/NFRs.
 - [x] **UML Behavioral Diagrams:** Use Case and Activity Diagrams.
-- [ ] **UML Structural Diagrams:** ERD and Class Diagrams.
+- [x] **UML Structural Diagrams:** ERD and Class Diagrams.
 - [ ] **Dynamic Modeling:** Sequence Diagrams for core processes.
 - [ ] **Interface Design:** Low-fidelity Wireframes.
 
