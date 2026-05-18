@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using FIN_INS.Models; // تأكد إنها نفس الـ Namespace تبع الموديلات تبعتك
+using FIN_INS.Models;  
 
 namespace FIN_INS.Data
 {
