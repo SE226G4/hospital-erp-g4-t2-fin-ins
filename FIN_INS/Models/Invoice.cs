@@ -1,9 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
 namespace FIN_INS.Models
 {
-   
-
     public class Invoice
     {
         [Key]
@@ -12,22 +11,30 @@ namespace FIN_INS.Models
         [Required]
         public string PatientID { get; set; }
         [ForeignKey("PatientID")]
-        public Patient Patient { get; set; }
+        public Patient Patient { get; set; } = null!;
+
+        [Required]
+        public int EncounterID { get; set; }  
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal TotalAmount { get; set; } = 0; 
+        public decimal TotalAmount { get; set; } = 0;
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal InsuranceCoveredAmount { get; set; } = 0;  
+        public decimal InsuranceCoveredAmount { get; set; } = 0;
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal PatientPayableAmount { get; set; } = 0;  
+        public decimal PatientPayableAmount { get; set; } = 0;
 
-        public bool IsClosed { get; set; } = false;  
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal AmountPaid { get; set; } = 0;  
 
-        
-        public ICollection<InvoiceItem> InvoiceItems { get; set; }
+        [StringLength(50)]
+        public string PaymentMethod { get; set; } = "Cash";  
+
+        public bool IsClosed { get; set; } = false;
+
+        public ICollection<InvoiceItem> InvoiceItems { get; set; } = new List<InvoiceItem>();
     }
 }
