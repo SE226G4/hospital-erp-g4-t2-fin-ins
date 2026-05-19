@@ -36,6 +36,6 @@ This module handles billing and insurance processes for patients. It combines al
 
 ---
 ## 🛠 Tools Used
-* **Modeling:** e.g., StarUML / Lucidchart.
+* **Modeling:** drawio, visual paradigm.
 * **Documentation:** Markdown / LaTeX.
 * **Version Control:** GitHub.
