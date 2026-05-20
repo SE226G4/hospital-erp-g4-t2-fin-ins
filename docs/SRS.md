@@ -123,7 +123,8 @@ The FIN-INS module is a component of the larger Hospital ERP System. It acts as 
 ## 4. Appendices
 ### Appendix A: Glossary & Models
 * Entity-Relationship Diagrams :
-* 1-Activity Diagram :![link](https://github.com/Dahhamm/software-engineering2/blob/main/photo_2026-05-18_07-14-11.png)
+* 1-Activity Diagram :
+* ![link](https://github.com/Dahhamm/software-engineering2/blob/main/photo_2026-05-18_07-14-11.png)
 * [Link of Activity Diagram:](https://github.com/Dahhamm/software-engineering2/blob/main/Activity%20_diagram_SE2.drawio)
 * 2-Components Diagram :![link](https://github.com/Dahhamm/software-engineering2/blob/main/component_diagram_billing_system.png)
 * [Link of Component Diagram:](https://github.com/Dahhamm/software-engineering2/blob/main/component_diagram_billing_system.drawio)
