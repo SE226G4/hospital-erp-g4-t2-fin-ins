@@ -129,7 +129,7 @@ The FIN-INS module is a component of the larger Hospital ERP System. It acts as 
 * 3-ERD [ مخطط قاعدة البيانات والERDالحركي  ]( https://github.com/mohammaadkh/FIN_INS/blob/1597e32dec660d874337c65237336e99ff1fb57c/ERD_Model2_FIN_INS.png)
 * 4-class_diagrame[finall_class_diaggram](https://github.com/mohammaadkh/FIN_INS/blob/1597e32dec660d874337c65237336e99ff1fb57c/class_diagram.png)
 * code_class_diagrame[the code that drow class diagram on drow oi](https://github.com/mohammaadkh/FIN_INS/blob/1597e32dec660d874337c65237336e99ff1fb57c/%D8%A7%D9%84%D9%83%D9%84%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B0%D9%8A%20%D8%B9%D9%85%D9%84%D9%86%D8%A7%20%D9%84%D9%87%20%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF%20%D8%B9%D9%84%D9%89%20drow%20oi%20%20%D9%81%D8%B8%D9%87%D8%B1%20%D9%85%D8%AE%D8%B7%D8%B7%20class%20diagram.txt)
-* 5-sequence diagram:[](https://github.com/alwkayanalassaadmohamad2-boop/mohamadsoftware123)
+* 5-sequence diagram:[sequence diagram](https://github.com/alwkayanalassaadmohamad2-boop/mohamadsoftware123)
 ### Appendix B: GitHub Traceability Checklist
 * [x] Every User Story in Section 3.2 has a corresponding GitHub Issue.
 * [x] Every GitHub Issue has an appropriate label.
