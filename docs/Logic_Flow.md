@@ -1,3 +1,11 @@
+## 5. مخططات التدفق المنطقي (Logic Flowcharts)
+
+الأداة المستخدمة في الرسم: تم تصميم وإعداد المخططات التدفّقية باستخدام أداة Mermaid.js المعتمدة على الشفرة البرمجية (Diagrams-as-Code).
+
+---
+
+### المخطط الأول: إجراءات التدقيق وإغلاق الملف المالي النهائي عند الخروج
+
 ```mermaid
 graph TD
     %% تعريف العناصر والخطوات
@@ -28,7 +36,7 @@ graph TD
     Close --> Send
     Send --> End
 
-    %% تعيين الألوان وتنسيق المظهر المضمون في جيت هاب
+    %% تعيين الألوان
     style Start fill:#f9f,stroke:#333,stroke-width:2px
     style End fill:#d5e8d4,stroke:#82b366,stroke-width:2px
     style Decision fill:#fff2cc,stroke:#d6b656,stroke-width:2px
