@@ -62,15 +62,20 @@ The FIN-INS module is a component of the larger Hospital ERP System. It acts as 
 
 ## 3. Specific Requirements (Agile Approach) :
 
-### 3.0.1 Functional Requirements (FRs)
+3.0.1. Functional Requirements (FR) - Billing & Insurance Module:
 
-1. The system shall generate unified invoices.
-2. The system shall calculate insurance coverage automatically.
-3. The system shall validate payment before service approval.
-4. The system shall receive billing data from all operational modules.
-5. The system shall generate final patient invoices.
+FR-01: The system must allow other departments (Pharmacy, Labs, Operations) to log and send completed medical services to the patient's billing record.
+
+FR-02: The system must allow the accountant to review all registered services and close the invoice after issuing the final bill.
+
+FR-03: The system must verify the patient's insurance validity and coverage limits before approving any medical service.
+
+FR-04: The system must aggregate costs from all hospital departments (Stay, Operations, Pharmacy) into a single unified patient invoice.
+
+FR-05: The system must automatically calculate the insurance coverage amount and the final remaining balance that the patient needs to pay.
 
 ---
+2. Requirements Traceability Matrix (RTM)Requirement IDDescriptionLinked User StoryGitHub IssueFR-01Log and send medical services from other departments.As a healthcare provider, I want to log a provided service...Issue #1FR-02Review registered services and issue final invoice.As an accountant, I want to review all registered services...Issue #2FR-03Verify insurance validity and coverage limits.As an insurance officer, I want to verify the patient's payment...Issue #3FR-04Aggregate costs from all departments into one invoice.As a billing officer, I want to aggregate costs from all departments...Issue #4FR-05Automatically calculate insurance coverage and balance.As a billing officer, I want the system to calculate insurance...Issue #5
 
 ### 3.0.2 Non-Functional Requirements (NFRs)
 
