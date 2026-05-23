@@ -142,12 +142,16 @@ GitHub Issue: Issue #5
 * **Description:** Managing insurance coverage and remaining balances.
 * **Priority:** High.
 * **User Stories:**
-    * **Story 1:** As a billing officer, I want to calculate insurance coverage automatically to show the remaining balance.
-        * *Acceptance Criteria:* Correct percentage is deducted based on the patient's insurance plan.
+    * **Story 1:**As a healthcare provider (Pharmacist/Lab Technician), I want to log a provided service to the patient's account so that it can be billed later by the finance team.
+        * *GitHub Issue:* #1
+    * **Story 2:**As a billing officer, I want to aggregate costs from all departments (Stay, Operations, Pharmacy) into a single patient invoice to ensure accurate billing..
         * *GitHub Issue:* #2
-    * **Story 2:** As a system, I want to verify payment or insurance coverage before allowing any service to be provided.
-        * *Acceptance Criteria:* System blocks service entry if no financial coverage is verified.
+    * **Story 3:**As an insurance officer, I want to verify the patient's payment ability or insurance coverage before allowing any service to be provided..
         * *GitHub Issue:* #3
+    * **Story 4:**As a healthcare provider (Pharmacist/Lab Technician), I want to log a provided service to the patient's account so that it can be billed later by the finance team.
+        * *GitHub Issue:* #4
+    * **Story 5:**As a healthcare provider (Pharmacist/Lab Technician), I want to log a provided service to the patient's account so that it can be billed later by the finance team.
+        * *GitHub Issue:* #5
 
 ---
 
