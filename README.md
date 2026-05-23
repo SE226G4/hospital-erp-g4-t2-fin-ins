@@ -36,6 +36,6 @@ This module handles billing and insurance processes for patients. It combines al
 
 ---
 ## 🛠 Tools Used
-* **Modeling:** drawio, visual paradigm.
+* **Modeling:** drawio, visual paradigm,Mermaid.
 * **Documentation:** Markdown / LaTeX.
 * **Version Control:** GitHub.
