@@ -75,8 +75,8 @@ FR-04: The system must aggregate costs from all hospital departments (Stay, Oper
 FR-05: The system must automatically calculate the insurance coverage amount and the final remaining balance that the patient needs to pay.
 
 ---
- 2. Requirements Traceability Matrix (RTM)
-Requirement: FR-01
+2. Requirements Traceability Matrix (RTM)
+*Requirement: FR-01
 
 Description: Log and send medical services from other departments.
 
@@ -84,7 +84,7 @@ Linked User Story: As a healthcare provider, I want to log a provided service...
 
 GitHub Issue: Issue #1
 
-Requirement: FR-02
+*Requirement: FR-02
 
 Description: Review registered services and issue final invoice.
 
@@ -92,7 +92,7 @@ Linked User Story: As an accountant, I want to review all registered services...
 
 GitHub Issue: Issue #2
 
-Requirement: FR-03
+*Requirement: FR-03
 
 Description: Verify insurance validity and coverage limits.
 
@@ -100,7 +100,7 @@ Linked User Story: As an insurance officer, I want to verify the patient's payme
 
 GitHub Issue: Issue #3
 
-Requirement: FR-04
+*Requirement: FR-04
 
 Description: Aggregate costs from all departments into one invoice.
 
@@ -108,7 +108,7 @@ Linked User Story: As a billing officer, I want to aggregate costs from all depa
 
 GitHub Issue: Issue #4
 
-Requirement: FR-05
+*Requirement: FR-05
 
 Description: Automatically calculate insurance coverage and balance.
 
