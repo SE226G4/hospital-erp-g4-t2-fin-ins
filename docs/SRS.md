@@ -115,6 +115,15 @@ Description: Automatically calculate insurance coverage and balance.
 Linked User Story: As a billing officer, I want the system to calculate insurance...
 
 GitHub Issue: Issue #5
+_Issue #1 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/1
+
+_Issue #2 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/2
+
+_Issue #3 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/3
+
+_Issue #4 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/4
+
+_Issue #5 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/
 
 ### 3.0.2 Non-Functional Requirements (NFRs)
 
