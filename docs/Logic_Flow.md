@@ -1,43 +1,47 @@
-```mermaid
 graph TD
-    %% تعريف خط البداية الأول: التحقق اليومي من الخدمات
-    Start1([بداية: طلب خدمة للمريض من قسم آخر صيدلية، عمليات، إقامة]) --> VerifyID[التحقق من الهوية الطبية الرقمية للمريض عبر نظام القبول - Module 1]
-    VerifyID --> CheckCoverage{هل توجد تغطية تأمينية كافية أو دفع مباشر مسبق؟}
-    
-    %% مسار رفض الخدمة
-    CheckCoverage -- لا --> DenyService[حظر تقديم الخدمة وإظهار تنبيه مالي في القسم الطالب]
-    DenyService --> End1([نهاية الإجراء: الخدمة مرفوضة])
-    
-    %% مسار قبول الخدمة وتقييدها تلقائياً
-    CheckCoverage -- نعم --> AllowService[السماح بتقديم الخدمة وصرفها للمريض]
-    AllowService --> AutoBilling[إرسال تكلفة الخدمة تلقائياً وتقييدها في الفاتورة الموحدة]
-    AutoBilling --> End2([نهاية الإجراء: تحديث الحساب المالي في الوقت الفعلي])
+    %% تعيين الألوان والأشكال
+    classDef startEnd fill:#f9f,stroke:#333,stroke-width:2px,rx:20px,ry:20px;
+    classDef process fill:#fff,stroke:#333,stroke-width:1px;
+    classDef decision fill:#fff2cc,stroke:#d6b656,stroke-width:1px;
+    classDef error fill:#f8cecc,stroke:#b85450,stroke-width:1px;
+    classDef success fill:#d5e8d4,stroke:#82b366,stroke-width:1px;
 
-    %% تعريف خط البداية الثاني: إجراءات الخروج وإغلاق الملف
-    Start2([بداية: استقبال إشعار موعد الخروج المتوقع قبل 24 ساعة - Module 3]) --> ScanSystems[عمل مسح وتدقيق لجميع الخدمات في الأنظمة الأخرى صيدلية، عمليات، إقامة]
-    ScanSystems --> CheckPending{هل توجد خدمات معلقة أو غير مسجلة في الأقسام؟}
-    
-    %% مسار وجود خدمات معلقة (إغلاق الملف محظور)
-    CheckPending -- نعم --> BlockDischarge[منع إغلاق الملف المالي وإرسال تنبيه بالقسم المتأخر لإدخال بياناته]
-    BlockDischarge --> ScanSystems
-    
-    %% مسار اكتمال تسجيل الخدمات (متابعة التصفية)
-    CheckPending -- لا --> FetchInsurance[الارتباط مع واجهة شركة التأمين وحساب التغطية النهائية آلياً]
-    FetchInsurance --> CalculateNet[إظهار المبلغ الصافي المتبقي على المريض بعد خصم التأمين]
-    CalculateNet --> CollectPayment[تحصيل المبلغ المتبقي من المريض عبر الدفع المباشر]
-    CollectPayment --> GenerateInvoice[إصدار الفاتورة النهائية الموحدة للمريض]
-    GenerateInvoice --> CloseFile[تغيير حالة الملف المالي للمريض في النظام إلى مغلق Closed]
-    CloseFile --> NotifyAdmission[إرسال إشعار إلكتروني ببراءة الذمة المالية لنظام القبول والإقامة]
-    NotifyAdmission --> EndDischarge([نهاية الإجراء: المريض مبرأ ذمته ومستعد للخروج الفعلي])
+    Start([استقبال إشعار موعد الخروج المتوقع<br>Module 3 - قبل 24 ساعة])
+    Scan[عمل مسح وتدقيق لجميع الخدمات في<br>الأنظمة الأخرى صيدلية، عمليات، إقامة]
+    Decision{هل توجد خدمات معلقة أو غير مسجلة؟}
+    Block[منع إغلاق الملف المالي وإرسال تنبيه<br>بالقسم المتأخر]
+    Wait[انتظار معالجة وتسوية الخدمات<br>المعلقة من القسم المعني]
+    Connect[الارتباط مع شركة التأمين وحساب<br>التغطية النهائية]
+    Show[إظهار المبلغ الصافي المتبقي على<br>المريض]
+    Collect[تحصيل المبلغ المتبقي من المريض -<br>دفع مباشر]
+    Invoice[إصدار الفاتورة النهائية الموحدة للمريض]
+    Close[تغيير حالة الملف المالي للمريض إلى<br>مغلق]
+    Send[إرسال إشعار ببراءة الذمة المالية لنظام<br>القبول والإقامة]
+    End([نهاية الإجراء: المريض خارج المستشفى])
 
-    %% تنسيق الألوان والمظهر الاحترافي للمخطط
-    style Start1 fill:#E1BEE7,stroke:#4A148C,stroke-width:2px
-    style Start2 fill:#E1BEE7,stroke:#4A148C,stroke-width:2px
-    style End1 fill:#FFCDD2,stroke:#B71C1C,stroke-width:2px
-    style End2 fill:#C8E6C9,stroke:#1B5E20,stroke-width:2px
-    style EndDischarge fill:#C8E6C9,stroke:#1B5E20,stroke-width:2px
-    style CheckCoverage fill:#FFF9C4,stroke:#F57F17,stroke-width:2px
-    style CheckPending fill:#FFF9C4,stroke:#F57F17,stroke-width:2px
-    style BlockDischarge fill:#FFCDD2,stroke:#B71C1C,stroke-width:2px
-    style AutoBilling fill:#BBDEFB,stroke:#0D47A1,stroke-width:2px
-    style GenerateInvoice fill:#C8E6C9,stroke:#1B5E20,stroke-width:2px
+    class Start startEnd;
+    class Scan process;
+    class Decision decision;
+    class Block error;
+    class Wait process;
+    class Connect process;
+    class Show process;
+    class Collect process;
+    class Invoice success;
+    class Close process;
+    class Send process;
+    class End success;
+
+    %% الربط بين الخطوات
+    Start --> Scan
+    Scan --> Decision
+    Decision -- نعم --> Block
+    Block --> Wait
+    Wait --> Scan
+    Decision -- لا --> Connect
+    Connect --> Show
+    Show --> Collect
+    Collect --> Invoice
+    Invoice --> Close
+    Close --> Send
+    Send --> End
