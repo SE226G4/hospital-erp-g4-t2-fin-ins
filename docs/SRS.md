@@ -198,7 +198,7 @@ _Issue #5 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/
    ![link](https://github.com/alwkayanalassaadmohamad2-boop/mohamadsoftware123/blob/main/sequance123456789.jpg)
 * link of [sequence diagram](https://github.com/alwkayanalassaadmohamad2-boop/mohamadsoftware123)
 * 7- [logic Flow](https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/blob/main/docs/Logic_Flow.md) (Mermaid)
-* 8 [back end (models & Contrller &Api](https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/tree/0d1496d27b50832a6ef11d73c8484c8d31e912fa/Controllers)
+* 8 [back end (models & Contrller &Api](https://github.com/mohammaadkh/FIN_INS.git)
 ### Appendix B: GitHub Traceability Checklist
 * [x] Every User Story in Section 3.2 has a corresponding GitHub Issue.
 * [x] Every GitHub Issue has an appropriate label.
