@@ -134,6 +134,18 @@ _Issue #5 Link: https://github.com/SE226G4/hospital-erp-g4-t2-fin-ins/issues/
 5. The system shall support scalable integration.
 
 ### 3.1 External Interface Requirements
+3.1.1 User Interface Screens:
+ ![link](https://github.com/Dahhamm/software-engineering2/blob/main/1.jpg)
+  ![link](https://github.com/Dahhamm/software-engineering2/blob/main/2.jpg)
+   ![link](https://github.com/Dahhamm/software-engineering2/blob/main/3.jpg)
+    ![link](https://github.com/Dahhamm/software-engineering2/blob/main/4.jpg)
+     ![link](https://github.com/Dahhamm/software-engineering2/blob/main/5.jpg)
+      ![link](https://github.com/Dahhamm/software-engineering2/blob/main/6.jpg)
+       ![link](https://github.com/Dahhamm/software-engineering2/blob/main/7.jpg)
+        ![link](https://github.com/Dahhamm/software-engineering2/blob/main/8.jpg)
+         ![link](https://github.com/Dahhamm/software-engineering2/blob/main/9.jpg)
+          ![link](https://github.com/Dahhamm/software-engineering2/blob/main/10.jpg)
+
 * **API Endpoint:** `POST /api/fin-ins/invoice/calculate`
 * **Format:** JSON response including total cost, insurance deduction, and net amount.
 
